@@ -21,7 +21,7 @@ on:
 jobs:
   load-test:
     name: Load Test
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, grid, linux-x64, heavy]
     
     steps:
     - uses: actions/checkout@v4
